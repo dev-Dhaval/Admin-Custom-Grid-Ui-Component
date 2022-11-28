@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Dynamic_Customgrid::customgrid" title="Customgrid" module="Dynamic_Customgrid" sortOrder="51" resource="Dynamic_Customgrid::customgrid"/>
+        <add id="Dynamic_Customgrid::index" title="manage Row" module="Dynamic_Customgrid" sortOrder="99" parent="Dynamic_Customgrid::customgrid" action="customgrid" resource="Dynamic_Customgrid::index"/>   
+    </menu>
+</config>
