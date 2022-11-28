@@ -13,5 +13,4 @@ AdminGrid UIComponent module [Magento 2 Customgrid].
 <b>Multiselect filter.</b><br>
 <img src="https://web2.dddemo.net/magento74/php/Filter.png" />
 
-- Feel free to [contact us](sherlockdeny@gmail.com) if you have any further questions.
 - Like this project, Give us a **Star** ![star](https://i.imgur.com/S8e0ctO.png)
