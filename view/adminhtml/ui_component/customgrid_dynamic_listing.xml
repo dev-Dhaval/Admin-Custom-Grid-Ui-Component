@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <listing xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <argument name="data" xsi:type="array">
+        <item name="js_config" xsi:type="array">
+            <item name="provider" xsi:type="string">customgrid_dynamic_listing.customgrid_data_source</item>
+            <item name="deps" xsi:type="string">customgrid_dynamic_listing.customgrid_data_source</item>
+        </item>
+        <item name="spinner" xsi:type="string">spinner_columns</item>
+        <item name="buttons" xsi:type="array">
+            <item name="add" xsi:type="array">
+                <item name="name" xsi:type="string">add</item>
+                <item name="label" xsi:type="string" translate="true">Add New Row</item>
+                <item name="class" xsi:type="string">primary</item>
+                <item name="url" xsi:type="string">*/*/addrow</item>
+            </item>
+        </item>
+    </argument>
     <listingToolbar name="listing_top">
         <argument name="data" xsi:type="array">
             <item name="config" xsi:type="array">
@@ -45,21 +60,6 @@
         <exportButton name="export_button"/>
     </listingToolbar>
     <!-- ... other block of code -->
-    <argument name="data" xsi:type="array">
-        <item name="js_config" xsi:type="array">
-            <item name="provider" xsi:type="string">customgrid_dynamic_listing.customgrid_data_source</item>
-            <item name="deps" xsi:type="string">customgrid_dynamic_listing.customgrid_data_source</item>
-        </item>
-        <item name="spinner" xsi:type="string">spinner_columns</item>
-        <item name="buttons" xsi:type="array">
-            <item name="add" xsi:type="array">
-                <item name="name" xsi:type="string">add</item>
-                <item name="label" xsi:type="string" translate="true">Add New Row</item>
-                <item name="class" xsi:type="string">primary</item>
-                <item name="url" xsi:type="string">*/*/addrow</item>
-            </item>
-        </item>
-    </argument>
     <dataSource name="nameOfDataSource">
         <argument name="dataProvider" xsi:type="configurableObject">
             <argument name="class" xsi:type="string">Magento\Framework\View\Element\UiComponent\DataProvider\DataProvider</argument>
